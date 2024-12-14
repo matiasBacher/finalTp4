@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="finalTp4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 <nav>
+     <ul class="nav nav-tabs">
+          <li class="nav-item">           
+              <asp:HyperLink ID="linkF1" runat="server" NavigateUrl="~/formulario1.aspx" CssClass="nav-link">formulario 1</asp:HyperLink>
+         </li>
+         <li class="nav-item">           
+              <asp:HyperLink ID="linkF2" runat="server" NavigateUrl="~/formulario2.aspx" CssClass="nav-link">formulario 2</asp:HyperLink>
+         </li>
+
+     </ul>
+ </nav>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
